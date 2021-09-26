@@ -1,7 +1,7 @@
-var sexy=2000; //var 는 변수를 바꿀 수 있음. 하지만 let은 변수를 바꾸지 못한다. 그런데 null값으로 두고 바꾸는 건 가능.
-sexy=1000;
-sexy=20202;
-sexy;
+var a=2000; //var 는 변수를 바꿀 수 있음. 하지만 let은 변수를 바꾸지 못한다. 그런데 null값으로 두고 바꾸는 건 가능.
+a=1000;
+a=20202;
+a;
 let meterToFeet=20.3;
 let year=1999;
 var x: String="Korea"; // : String int 변수 선언을 할 수 있음.
