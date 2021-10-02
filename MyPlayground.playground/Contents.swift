@@ -27,3 +27,48 @@ if sound >= 85{
 }else{
     print("safe");
 }
+
+
+
+//Math operations
+(4+6) / 3 * 99
+
+var agee = 12;
+var ageMin = 19;
+if agee < ageMin{
+    let di=ageMin-agee;
+    print(di);
+}
+// converter
+
+var i = 15;
+var m = i * (381/1250); //double 이랑 int 사용함 그래서 결과가 0이 나온다.
+
+2.0/5.0
+
+
+// transfer
+
+var transfer = 200.0;
+var cut = transfer * 0.02;
+
+//floats 쓰는걸 추천 ㄴㄴ
+
+var order = 227.0;
+var cutrate = 0.02;
+var cutt = Double(order) * Double(cutrate);
+
+
+var x1 = "3";
+Double(x1)! * 7;
+
+
+var income = 300;
+var day = "monday";
+
+print("hihi \(day) i earned \(income)")
+//booleans
+var isEurope: Bool = true
+if isEurope  {
+    print("welcome to europe")
+}

@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount to be exchange" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BeM-XP-fdh">
+                                <rect key="frame" x="25" y="31.666666666666671" width="90" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="gEX-1a-lGq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Exchange rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pxX-k7-Rbu">
+                                <rect key="frame" x="25" y="86.666666666666671" width="90" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="QBs-qd-tSl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZRS-i5-PGa">
+                                <rect key="frame" x="25.666666666666686" y="187.66666666666666" width="89" height="32"/>
+                                <segments>
+                                    <segment title="BTC"/>
+                                    <segment title="ETH"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwk-NJ-RiM">
+                                <rect key="frame" x="36.666666666666657" y="248.66666666666663" width="67" height="30"/>
+                                <state key="normal" title="Exchange"/>
+                                <connections>
+                                    <action selector="exchangeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ge3-St-ZMz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B 60.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8s-iH-SBZ">
+                                <rect key="frame" x="25" y="0.0" width="90" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pxX-k7-Rbu" firstAttribute="top" secondItem="BeM-XP-fdh" secondAttribute="bottom" constant="28" id="7wa-8l-1ew"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BeM-XP-fdh" secondAttribute="trailing" constant="25" id="Baz-Z1-M8S"/>
+                            <constraint firstItem="BeM-XP-fdh" firstAttribute="top" secondItem="w8s-iH-SBZ" secondAttribute="bottom" constant="8" symbolic="YES" id="FOT-s1-Cp1"/>
+                            <constraint firstItem="lwk-NJ-RiM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FPO-7A-8zQ"/>
+                            <constraint firstItem="w8s-iH-SBZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hju-Fu-eIv"/>
+                            <constraint firstItem="pxX-k7-Rbu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="JIh-Jo-f1l"/>
+                            <constraint firstItem="BeM-XP-fdh" firstAttribute="top" secondItem="w8s-iH-SBZ" secondAttribute="bottom" constant="16" id="MX6-MP-rqP"/>
+                            <constraint firstItem="lwk-NJ-RiM" firstAttribute="top" secondItem="ZRS-i5-PGa" secondAttribute="bottom" constant="30" id="Of8-hW-27o"/>
+                            <constraint firstItem="ZRS-i5-PGa" firstAttribute="top" secondItem="pxX-k7-Rbu" secondAttribute="bottom" constant="67" id="QAo-35-Bu3"/>
+                            <constraint firstItem="BeM-XP-fdh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bC1-P9-KWd"/>
+                            <constraint firstItem="BeM-XP-fdh" firstAttribute="firstBaseline" secondItem="w8s-iH-SBZ" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="eCr-6o-TWA"/>
+                            <constraint firstItem="BeM-XP-fdh" firstAttribute="top" secondItem="w8s-iH-SBZ" secondAttribute="bottom" constant="8" symbolic="YES" id="hzz-0T-eiU"/>
+                            <constraint firstItem="ZRS-i5-PGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kJ5-pd-274"/>
+                            <constraint firstItem="BeM-XP-fdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="kz8-Mt-CQP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pxX-k7-Rbu" secondAttribute="trailing" constant="25" id="mv0-Ql-iLQ"/>
+                            <constraint firstItem="pxX-k7-Rbu" firstAttribute="top" secondItem="BeM-XP-fdh" secondAttribute="bottom" constant="21" id="oDt-nT-hCn"/>
+                            <constraint firstItem="w8s-iH-SBZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="orp-uA-nIZ"/>
+                            <constraint firstItem="pxX-k7-Rbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tm0-Bi-5J9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="pxX-k7-Rbu" id="GRa-WQ-07W"/>
+                        <outlet property="ratioTextField" destination="BeM-XP-fdh" id="5aN-jw-KCN"/>
+                        <outlet property="resultLable" destination="w8s-iH-SBZ" id="ujX-0S-0n6"/>
+                        <outlet property="toggleCurrency" destination="ZRS-i5-PGa" id="KVE-dN-kl5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="88.043478260869577"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
