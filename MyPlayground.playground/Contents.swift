@@ -72,3 +72,15 @@ var isEurope: Bool = true
 if isEurope  {
     print("welcome to europe")
 }
+
+//arrays 리스트다 쇼핑리스트 .. 등등등
+var friends: [String] = ["Chandler","Phoebe","Ross","Joey","Rachel","Monica"];
+friends.first //첫번째
+friends.last //마지막
+friends[2] //Ross
+
+friends.append("Gunther");
+
+friends.insert("Gunther", at: 0);
+friends.remove(at: 7); //friends.remove(at: friends.count)
+
