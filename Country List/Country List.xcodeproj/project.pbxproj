@@ -13,6 +13,7 @@
 		230A7D27270807F000029BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230A7D25270807F000029BEF /* LaunchScreen.storyboard */; };
 		230A7D2E2708099E00029BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230A7D20270807EF00029BEF /* Main.storyboard */; };
 		230A7D3027080AC100029BEF /* CountryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230A7D2F27080AC100029BEF /* CountryTableViewController.swift */; };
+		23B715C5272E99CD000E1576 /* CountryDefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B715C4272E99CD000E1576 /* CountryDefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		230A7D26270807F000029BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		230A7D28270807F000029BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		230A7D2F27080AC100029BEF /* CountryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewController.swift; sourceTree = "<group>"; };
+		23B715C4272E99CD000E1576 /* CountryDefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				230A7D1A270807EF00029BEF /* AppDelegate.swift */,
 				230A7D1C270807EF00029BEF /* SceneDelegate.swift */,
+				230A7D2F27080AC100029BEF /* CountryTableViewController.swift */,
+				23B715C4272E99CD000E1576 /* CountryDefinitionViewController.swift */,
 				230A7D20270807EF00029BEF /* Main.storyboard */,
 				230A7D23270807F000029BEF /* Assets.xcassets */,
 				230A7D25270807F000029BEF /* LaunchScreen.storyboard */,
 				230A7D28270807F000029BEF /* Info.plist */,
-				230A7D2F27080AC100029BEF /* CountryTableViewController.swift */,
 			);
 			path = "Country List";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B715C5272E99CD000E1576 /* CountryDefinitionViewController.swift in Sources */,
 				230A7D1B270807EF00029BEF /* AppDelegate.swift in Sources */,
 				230A7D1D270807EF00029BEF /* SceneDelegate.swift in Sources */,
 				230A7D3027080AC100029BEF /* CountryTableViewController.swift in Sources */,
