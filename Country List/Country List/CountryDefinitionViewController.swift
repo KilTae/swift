@@ -14,17 +14,17 @@ class CountryDefinitionViewController: UITableViewController {
 
     @IBOutlet weak var countryDefinitionLabel: UITextField!
     
-    var country = "canada";
+    var country: Country = Country();
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        bigFlagLabel.text=country;
-        
+        bigFlagLabel.text=country.flag;
+        countryDefinitionLabel.text="\(country.name) flag is \(country.flag).";
      //   let flags = ["🇰🇷","🇱🇷","🇻🇳","🇵🇲"];
         
-        if country == "🇱🇷" {
+   /*     if country == "🇱🇷" {
             countryDefinitionLabel.text = "US"
         }
         
@@ -40,7 +40,7 @@ class CountryDefinitionViewController: UITableViewController {
         if country == "🇵🇲" {
             countryDefinitionLabel.text = "st.pierre"
         }
-
+*/
     }
 
 

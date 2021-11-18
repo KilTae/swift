@@ -9,7 +9,7 @@ import UIKit
 
 class CountryTableViewController: UITableViewController {
     
-    let flags = ["🇰🇷","🇱🇷","🇻🇳","🇵🇲"];
+    let flags = getCountries();
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class CountryTableViewController: UITableViewController {
 
         // Configure the cell...
        
-        cell.textLabel?.text =  flags[indexPath.row];
+        cell.textLabel?.text =  flags[indexPath.row].flag + "-" + flags[indexPath.row].name;
         //print(indexPath.row) 몇개 리스트 프린트 되는지
 
         return cell
@@ -39,11 +39,16 @@ class CountryTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let defOfViewController = segue.destination as! CountryDefinitionViewController;
+       if let defOfViewController = segue.destination as?
+        CountryDefinitionViewController{
+        if let selectedCountry = sender as? Country {
+            defOfViewController.country = selectedCountry;
+        }
+          
         
-        let selectedCountry = sender as! String;
+        }
         
-        defOfViewController.country = selectedCountry;
+     
         
     }
 }
