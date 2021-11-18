@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yWz-X2-EOH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Blog Entries Table View Controller-->
+        <scene sceneID="aOT-4x-726">
+            <objects>
+                <tableViewController id="qbG-Wt-bz2" customClass="BlogEntriesTableViewController" customModule="My_Daily_Blog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EAf-t8-2f7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="we4-4n-Kjd">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="we4-4n-Kjd" id="ooK-2B-2f8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qbG-Wt-bz2" id="HRO-yU-yX9"/>
+                            <outlet property="delegate" destination="qbG-Wt-bz2" id="oAg-yh-eSS"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="jRu-Ps-9I6">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="compose" id="s6M-Wt-Zok">
+                            <connections>
+                                <segue destination="wXY-ra-wAM" kind="show" id="hk8-bG-HAY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61D-by-k8G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485.50724637681162" y="99.776785714285708"/>
+        </scene>
+        <!--Blog App-->
+        <scene sceneID="HKW-jJ-96j">
+            <objects>
+                <viewController id="wXY-ra-wAM" customClass="BlogEntryTableViewController" customModule="My_Daily_Blog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="rUg-1P-4ME">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="3TV-kl-xjT">
+                                <rect key="frame" x="25" y="113" width="414" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="3h9-J5-qrH"/>
+                                </constraints>
+                            </datePicker>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-6l-cfT">
+                                <rect key="frame" x="25" y="213" width="364" height="575"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="434" id="L2a-kN-ytv"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VyG-Ey-GcC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3TV-kl-xjT" firstAttribute="leading" secondItem="VyG-Ey-GcC" secondAttribute="leading" constant="25" id="1gB-5z-dsb"/>
+                            <constraint firstItem="3TV-kl-xjT" firstAttribute="centerX" secondItem="rUg-1P-4ME" secondAttribute="centerX" id="8Sb-r9-0T8"/>
+                            <constraint firstItem="XTe-6l-cfT" firstAttribute="top" secondItem="3TV-kl-xjT" secondAttribute="bottom" constant="25" id="BFA-7X-SSB"/>
+                            <constraint firstItem="VyG-Ey-GcC" firstAttribute="bottom" secondItem="XTe-6l-cfT" secondAttribute="bottom" constant="25" id="K2O-ry-lWy"/>
+                            <constraint firstItem="VyG-Ey-GcC" firstAttribute="trailing" secondItem="XTe-6l-cfT" secondAttribute="trailing" constant="25" id="ZSB-Wd-JkT"/>
+                            <constraint firstItem="XTe-6l-cfT" firstAttribute="leading" secondItem="VyG-Ey-GcC" secondAttribute="leading" constant="25" id="Zjt-pe-pbg"/>
+                            <constraint firstItem="3TV-kl-xjT" firstAttribute="trailing" secondItem="VyG-Ey-GcC" secondAttribute="trailing" constant="25" id="kE7-d1-O78"/>
+                            <constraint firstItem="3TV-kl-xjT" firstAttribute="top" secondItem="VyG-Ey-GcC" secondAttribute="top" constant="25" id="tPQ-ND-OBJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blog App" id="nYD-bu-QGk">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="trash" id="Rie-zq-wGE">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="blogEntryTextView" destination="XTe-6l-cfT" id="XNM-h8-n7K"/>
+                        <outlet property="datePicker" destination="3TV-kl-xjT" id="lFl-rF-bsW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUo-oc-s5B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1208.6956521739132" y="107.8125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xsp-Vk-aig">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yWz-X2-EOH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vUq-ct-ADa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qbG-Wt-bz2" kind="relationship" relationship="rootViewController" id="66S-Ch-pYY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUf-ff-IgL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-424.63768115942031" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
