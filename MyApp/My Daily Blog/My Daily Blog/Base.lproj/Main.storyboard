@@ -17,12 +17,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="we4-4n-Kjd">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryRow" rowHeight="90" id="we4-4n-Kjd">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="we4-4n-Kjd" id="ooK-2B-2f8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="we4-4n-Kjd" id="ooK-2B-2f8" customClass="BlogEntryTableViewCell" customModule="My_Daily_Blog" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vw3-xc-nKx">
+                                            <rect key="frame" x="20" y="11" width="70" height="37"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="vNA-GA-zg3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kdfjkasdhfdsaknfkjadbjabdfjkasdbfjk.asdnf.kdsnafj.snadf.jsdnaf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auX-xN-h97">
+                                            <rect key="frame" x="120" y="11" width="269.5" height="68"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdD-8a-Kgi">
+                                            <rect key="frame" x="31" y="42" width="32.5" height="37"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <color key="textColor" systemColor="systemBlueColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Vw3-xc-nKx" firstAttribute="top" secondItem="ooK-2B-2f8" secondAttribute="topMargin" id="HR0-d2-rlb"/>
+                                        <constraint firstItem="xdD-8a-Kgi" firstAttribute="bottom" secondItem="ooK-2B-2f8" secondAttribute="bottomMargin" id="Jok-lf-oti"/>
+                                        <constraint firstItem="Vw3-xc-nKx" firstAttribute="leading" secondItem="ooK-2B-2f8" secondAttribute="leadingMargin" id="W4I-NT-Cfl"/>
+                                        <constraint firstItem="auX-xN-h97" firstAttribute="top" secondItem="ooK-2B-2f8" secondAttribute="topMargin" id="fr2-G5-ueS"/>
+                                        <constraint firstItem="auX-xN-h97" firstAttribute="leading" secondItem="Vw3-xc-nKx" secondAttribute="trailing" constant="30" id="qgx-D3-HdT"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="auX-xN-h97" secondAttribute="bottom" id="uPF-yr-I4b"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="auX-xN-h97" secondAttribute="trailing" id="v3Y-HK-6UO"/>
+                                        <constraint firstItem="xdD-8a-Kgi" firstAttribute="leading" secondItem="Vw3-xc-nKx" secondAttribute="leading" id="w1T-gK-oTY"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -35,7 +68,7 @@
                     <navigationItem key="navigationItem" id="jRu-Ps-9I6">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="compose" id="s6M-Wt-Zok">
                             <connections>
-                                <segue destination="wXY-ra-wAM" kind="show" id="hk8-bG-HAY"/>
+                                <segue destination="wXY-ra-wAM" kind="show" identifier="onEntrySegue" id="hk8-bG-HAY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -49,7 +82,7 @@
         <scene sceneID="HKW-jJ-96j">
             <objects>
                 <viewController id="wXY-ra-wAM" customClass="BlogEntryTableViewController" customModule="My_Daily_Blog" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="rUg-1P-4ME">
+                    <view key="view" contentMode="scaleToFill" id="rUg-1P-4ME">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -58,8 +91,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="3h9-J5-qrH"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="onDateChange:" destination="wXY-ra-wAM" eventType="valueChanged" id="i0m-Du-1Ao"/>
+                                </connections>
                             </datePicker>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-6l-cfT">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-6l-cfT">
                                 <rect key="frame" x="25" y="213" width="364" height="575"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -87,6 +123,9 @@
                     <navigationItem key="navigationItem" title="Blog App" id="nYD-bu-QGk">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="trash" id="Rie-zq-wGE">
                             <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="onDelete:" destination="wXY-ra-wAM" id="dLk-8L-5Rv"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -123,6 +162,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

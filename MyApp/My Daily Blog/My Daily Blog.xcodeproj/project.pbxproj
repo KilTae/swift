@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2391CB9927795E0200C153CA /* BlogEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391CB9727795E0200C153CA /* BlogEntry+CoreDataClass.swift */; };
+		2391CB9A27795E0200C153CA /* BlogEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391CB9827795E0200C153CA /* BlogEntry+CoreDataProperties.swift */; };
+		2391CB9C27796EE600C153CA /* BlogEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391CB9B27796EE600C153CA /* BlogEntryTableViewCell.swift */; };
 		23FB95CD27460F9300187D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB95CC27460F9300187D7C /* AppDelegate.swift */; };
 		23FB95CF27460F9300187D7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB95CE27460F9300187D7C /* SceneDelegate.swift */; };
 		23FB95D427460F9300187D7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB95D227460F9300187D7C /* Main.storyboard */; };
@@ -15,7 +18,6 @@
 		23FB95DC27460F9400187D7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB95DA27460F9400187D7C /* LaunchScreen.storyboard */; };
 		23FB95E727460F9400187D7C /* My_Daily_BlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB95E627460F9400187D7C /* My_Daily_BlogTests.swift */; };
 		23FB95F227460F9400187D7C /* My_Daily_BlogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB95F127460F9400187D7C /* My_Daily_BlogUITests.swift */; };
-		23FB96002746157600187D7C /* BlogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB95FF2746157600187D7C /* BlogEntry.swift */; };
 		23FB96022746160F00187D7C /* BlogEntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB96012746160F00187D7C /* BlogEntriesTableViewController.swift */; };
 		23FB96042746164D00187D7C /* BlogEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB96032746164D00187D7C /* BlogEntryTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2391CB9727795E0200C153CA /* BlogEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlogEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2391CB9827795E0200C153CA /* BlogEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlogEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2391CB9B27796EE600C153CA /* BlogEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogEntryTableViewCell.swift; sourceTree = "<group>"; };
 		23FB95C927460F9300187D7C /* My Daily Blog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Daily Blog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FB95CC27460F9300187D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23FB95CE27460F9300187D7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +57,6 @@
 		23FB95ED27460F9400187D7C /* My Daily BlogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Daily BlogUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FB95F127460F9400187D7C /* My_Daily_BlogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Daily_BlogUITests.swift; sourceTree = "<group>"; };
 		23FB95F327460F9400187D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23FB95FF2746157600187D7C /* BlogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogEntry.swift; sourceTree = "<group>"; };
 		23FB96012746160F00187D7C /* BlogEntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogEntriesTableViewController.swift; sourceTree = "<group>"; };
 		23FB96032746164D00187D7C /* BlogEntryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogEntryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,12 +109,14 @@
 		23FB95CB27460F9300187D7C /* My Daily Blog */ = {
 			isa = PBXGroup;
 			children = (
+				2391CB9B27796EE600C153CA /* BlogEntryTableViewCell.swift */,
 				23FB95CC27460F9300187D7C /* AppDelegate.swift */,
+				2391CB9727795E0200C153CA /* BlogEntry+CoreDataClass.swift */,
+				2391CB9827795E0200C153CA /* BlogEntry+CoreDataProperties.swift */,
 				23FB95CE27460F9300187D7C /* SceneDelegate.swift */,
 				23FB96012746160F00187D7C /* BlogEntriesTableViewController.swift */,
 				23FB95D227460F9300187D7C /* Main.storyboard */,
 				23FB96032746164D00187D7C /* BlogEntryTableViewController.swift */,
-				23FB95FF2746157600187D7C /* BlogEntry.swift */,
 				23FB95D827460F9400187D7C /* Assets.xcassets */,
 				23FB95DA27460F9400187D7C /* LaunchScreen.storyboard */,
 				23FB95DD27460F9400187D7C /* Info.plist */,
@@ -267,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23FB96002746157600187D7C /* BlogEntry.swift in Sources */,
+				2391CB9C27796EE600C153CA /* BlogEntryTableViewCell.swift in Sources */,
+				2391CB9927795E0200C153CA /* BlogEntry+CoreDataClass.swift in Sources */,
 				23FB95D727460F9300187D7C /* My_Daily_Blog.xcdatamodeld in Sources */,
+				2391CB9A27795E0200C153CA /* BlogEntry+CoreDataProperties.swift in Sources */,
 				23FB95CD27460F9300187D7C /* AppDelegate.swift in Sources */,
 				23FB95CF27460F9300187D7C /* SceneDelegate.swift in Sources */,
 				23FB96042746164D00187D7C /* BlogEntryTableViewController.swift in Sources */,
