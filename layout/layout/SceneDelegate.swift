@@ -1,4 +1,9 @@
-
+//
+//  SceneDelegate.swift
+//  layout
+//
+//  Created by 길태연 on 2022/01/10.
+//
 
 import UIKit
 

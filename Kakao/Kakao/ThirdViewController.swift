@@ -1,24 +1,24 @@
-
+//
+//  ThirdViewController.swift
+//  Kakao
+//
+//  Created by 길태연 on 2022/01/10.
+//
 
 import UIKit
 
-class SecondViewController: UIViewController {
-    @IBOutlet weak var Id: UITextField!
-    
+class ThirdViewController: UIViewController {
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.7)
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func createId(_ sender: Any) {
-//        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "FirstViewController") as? FirstViewController  else {
-//            return
-//        }
-//        nextVC.name = Id.text
-//        self.present(nextVC, animated: true){
-//            self.navigationController?.popViewController(animated: true)
-//        }
+    @IBAction func Cancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*

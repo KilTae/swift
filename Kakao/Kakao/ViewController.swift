@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     @IBAction func loginID(_ sender: Any) {
        
         
-        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "FirstViewController") as? FirstViewController  else {
-            return
-        }
-        nextVC.name=Id.text
-        self.present(nextVC, animated: true, completion: nil)
-        
+//        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "FirstViewController") as? FirstViewController  else {
+//            return
+//        }
+//        nextVC.name=Id.text
+//        self.present(nextVC, animated: true, completion: nil)
+//
 
         
         
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             return
         }
         self.navigationController?.pushViewController(nextVC, animated: true)
-        
+
     }
 }
 
