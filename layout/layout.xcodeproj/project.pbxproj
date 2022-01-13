@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2314D98C278FDE91005AA9DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2314D98B278FDE91005AA9DE /* MainViewController.swift */; };
+		2314D98E278FDEA1005AA9DE /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2314D98D278FDEA1005AA9DE /* DelegateViewController.swift */; };
+		2314D990278FE320005AA9DE /* TaeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2314D98F278FE320005AA9DE /* TaeViewController.swift */; };
+		2314D992278FFBA9005AA9DE /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2314D991278FFBA9005AA9DE /* MusicViewController.swift */; };
+		2314D996278FFC75005AA9DE /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2314D995278FFC75005AA9DE /* MusicCollectionViewCell.swift */; };
+		2314D998278FFE43005AA9DE /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2314D997278FFE43005AA9DE /* MusicDataModel.swift */; };
 		23CD8E19278BD67A00829798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E18278BD67A00829798 /* AppDelegate.swift */; };
 		23CD8E1B278BD67A00829798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E1A278BD67A00829798 /* SceneDelegate.swift */; };
 		23CD8E1D278BD67A00829798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E1C278BD67A00829798 /* ViewController.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2314D98B278FDE91005AA9DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2314D98D278FDEA1005AA9DE /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		2314D98F278FE320005AA9DE /* TaeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaeViewController.swift; sourceTree = "<group>"; };
+		2314D991278FFBA9005AA9DE /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		2314D995278FFC75005AA9DE /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		2314D997278FFE43005AA9DE /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 		23CD8E15278BD67A00829798 /* layout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = layout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CD8E18278BD67A00829798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23CD8E1A278BD67A00829798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +72,12 @@
 				23CD8E1A278BD67A00829798 /* SceneDelegate.swift */,
 				23CD8E1C278BD67A00829798 /* ViewController.swift */,
 				23CD8E1E278BD67A00829798 /* Main.storyboard */,
+				2314D995278FFC75005AA9DE /* MusicCollectionViewCell.swift */,
+				2314D991278FFBA9005AA9DE /* MusicViewController.swift */,
+				2314D997278FFE43005AA9DE /* MusicDataModel.swift */,
+				2314D98F278FE320005AA9DE /* TaeViewController.swift */,
+				2314D98B278FDE91005AA9DE /* MainViewController.swift */,
+				2314D98D278FDEA1005AA9DE /* DelegateViewController.swift */,
 				23CD8E21278BD67B00829798 /* Assets.xcassets */,
 				23CD8E23278BD67B00829798 /* LaunchScreen.storyboard */,
 				23CD8E26278BD67B00829798 /* Info.plist */,
@@ -137,9 +155,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2314D996278FFC75005AA9DE /* MusicCollectionViewCell.swift in Sources */,
+				2314D98E278FDEA1005AA9DE /* DelegateViewController.swift in Sources */,
+				2314D998278FFE43005AA9DE /* MusicDataModel.swift in Sources */,
+				2314D992278FFBA9005AA9DE /* MusicViewController.swift in Sources */,
 				23CD8E1D278BD67A00829798 /* ViewController.swift in Sources */,
 				23CD8E19278BD67A00829798 /* AppDelegate.swift in Sources */,
+				2314D990278FE320005AA9DE /* TaeViewController.swift in Sources */,
 				23CD8E1B278BD67A00829798 /* SceneDelegate.swift in Sources */,
+				2314D98C278FDE91005AA9DE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
