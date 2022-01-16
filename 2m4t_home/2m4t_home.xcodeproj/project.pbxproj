@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		238074072793C05200975BEF /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238074062793C05200975BEF /* ImageCollectionViewCell.swift */; };
+		238074092793C1BB00975BEF /* ImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238074082793C1BB00975BEF /* ImageDataModel.swift */; };
+		2380740B2793DAD700975BEF /* HashtagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380740A2793DAD700975BEF /* HashtagCollectionViewCell.swift */; };
+		2380740D2793DCAF00975BEF /* HashtagDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380740C2793DCAF00975BEF /* HashtagDataModel.swift */; };
 		23CD8E3B278BFDE200829798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E3A278BFDE200829798 /* AppDelegate.swift */; };
 		23CD8E3D278BFDE200829798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E3C278BFDE200829798 /* SceneDelegate.swift */; };
 		23CD8E3F278BFDE200829798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E3E278BFDE200829798 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		238074062793C05200975BEF /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		238074082793C1BB00975BEF /* ImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataModel.swift; sourceTree = "<group>"; };
+		2380740A2793DAD700975BEF /* HashtagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagCollectionViewCell.swift; sourceTree = "<group>"; };
+		2380740C2793DCAF00975BEF /* HashtagDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagDataModel.swift; sourceTree = "<group>"; };
 		23CD8E37278BFDE200829798 /* 2m4t_home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2m4t_home.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CD8E3A278BFDE200829798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23CD8E3C278BFDE200829798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +67,11 @@
 				23CD8E3A278BFDE200829798 /* AppDelegate.swift */,
 				23CD8E3C278BFDE200829798 /* SceneDelegate.swift */,
 				23CD8E3E278BFDE200829798 /* ViewController.swift */,
+				238074082793C1BB00975BEF /* ImageDataModel.swift */,
+				2380740C2793DCAF00975BEF /* HashtagDataModel.swift */,
 				23CD8E40278BFDE200829798 /* Main.storyboard */,
+				2380740A2793DAD700975BEF /* HashtagCollectionViewCell.swift */,
+				238074062793C05200975BEF /* ImageCollectionViewCell.swift */,
 				23CD8E43278BFDE300829798 /* Assets.xcassets */,
 				23CD8E45278BFDE300829798 /* LaunchScreen.storyboard */,
 				23CD8E48278BFDE300829798 /* Info.plist */,
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2380740D2793DCAF00975BEF /* HashtagDataModel.swift in Sources */,
 				23CD8E3F278BFDE200829798 /* ViewController.swift in Sources */,
+				238074092793C1BB00975BEF /* ImageDataModel.swift in Sources */,
 				23CD8E3B278BFDE200829798 /* AppDelegate.swift in Sources */,
+				2380740B2793DAD700975BEF /* HashtagCollectionViewCell.swift in Sources */,
+				238074072793C05200975BEF /* ImageCollectionViewCell.swift in Sources */,
 				23CD8E3D278BFDE200829798 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
