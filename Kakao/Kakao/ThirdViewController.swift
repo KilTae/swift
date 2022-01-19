@@ -9,7 +9,9 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
-
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var userImgView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 0.7)

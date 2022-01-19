@@ -11,15 +11,7 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func Image(_ sender: Any) {
-                guard let nextVC = self.storyboard?.instantiateViewController(identifier: "ThirdViewController") as? ThirdViewController  else {
-                    return
-                }
-    
-        nextVC.modalPresentationStyle = .fullScreen
-                self.present(nextVC, animated: true, completion: nil)
-        
-    }
+
     //    func setName() {
 //        if let nam = self.name{
 //            nameLabel.text = nam + "님"

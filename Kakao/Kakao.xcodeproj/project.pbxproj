@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23BD3A582797FB3A00D0398A /* KakaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD3A572797FB3A00D0398A /* KakaoTableViewCell.swift */; };
+		23BD3A5A2797FB6A00D0398A /* KakaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD3A592797FB6A00D0398A /* KakaoViewController.swift */; };
+		23BD3A5C2797FCC900D0398A /* KakaoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD3A5B2797FCC900D0398A /* KakaoDataModel.swift */; };
+		23BD3A5E27980CF800D0398A /* MoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD3A5D27980CF800D0398A /* MoreDataModel.swift */; };
+		23BD3A6227980D8600D0398A /* MoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD3A6127980D8600D0398A /* MoreCollectionViewCell.swift */; };
 		23CD8E2D278BE2EF00829798 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E2C278BE2EF00829798 /* ThirdViewController.swift */; };
 		23EE627127855CA8008D5881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE627027855CA8008D5881 /* AppDelegate.swift */; };
 		23EE627327855CA8008D5881 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE627227855CA8008D5881 /* SceneDelegate.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23BD3A572797FB3A00D0398A /* KakaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTableViewCell.swift; sourceTree = "<group>"; };
+		23BD3A592797FB6A00D0398A /* KakaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoViewController.swift; sourceTree = "<group>"; };
+		23BD3A5B2797FCC900D0398A /* KakaoDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoDataModel.swift; sourceTree = "<group>"; };
+		23BD3A5D27980CF800D0398A /* MoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDataModel.swift; sourceTree = "<group>"; };
+		23BD3A6127980D8600D0398A /* MoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewCell.swift; sourceTree = "<group>"; };
 		23CD8E2C278BE2EF00829798 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		23EE626D27855CA8008D5881 /* Kakao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kakao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EE627027855CA8008D5881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +76,12 @@
 				23EE627227855CA8008D5881 /* SceneDelegate.swift */,
 				23EE627427855CA8008D5881 /* ViewController.swift */,
 				23EE627627855CA8008D5881 /* Main.storyboard */,
+				23BD3A6127980D8600D0398A /* MoreCollectionViewCell.swift */,
+				23BD3A592797FB6A00D0398A /* KakaoViewController.swift */,
+				23BD3A5B2797FCC900D0398A /* KakaoDataModel.swift */,
+				23BD3A572797FB3A00D0398A /* KakaoTableViewCell.swift */,
 				23CD8E2C278BE2EF00829798 /* ThirdViewController.swift */,
+				23BD3A5D27980CF800D0398A /* MoreDataModel.swift */,
 				23EE628427855D0A008D5881 /* FirstViewController.swift */,
 				23EE628627855D15008D5881 /* SecondViewController.swift */,
 				23EE627927855CA9008D5881 /* Assets.xcassets */,
@@ -148,9 +163,14 @@
 			files = (
 				23EE627527855CA8008D5881 /* ViewController.swift in Sources */,
 				23EE627127855CA8008D5881 /* AppDelegate.swift in Sources */,
+				23BD3A5A2797FB6A00D0398A /* KakaoViewController.swift in Sources */,
 				23EE627327855CA8008D5881 /* SceneDelegate.swift in Sources */,
+				23BD3A582797FB3A00D0398A /* KakaoTableViewCell.swift in Sources */,
+				23BD3A6227980D8600D0398A /* MoreCollectionViewCell.swift in Sources */,
 				23EE628727855D15008D5881 /* SecondViewController.swift in Sources */,
+				23BD3A5E27980CF800D0398A /* MoreDataModel.swift in Sources */,
 				23CD8E2D278BE2EF00829798 /* ThirdViewController.swift in Sources */,
+				23BD3A5C2797FCC900D0398A /* KakaoDataModel.swift in Sources */,
 				23EE628527855D0A008D5881 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
