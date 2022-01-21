@@ -6,11 +6,37 @@
 //
 
 import UIKit
+import Alamofire
+
+struct PersonDataModel : Encodable {
+    var name : String
+    var age : Int
+}
+
+
+struct CoffeDataModel : Decodable {
+    var drink : String
+    var price : Int
+}
 
 class ViewController: UIViewController {
     
+    let personData = PersonDataModel(name: "dd", age: 12)
+    
+    let dummyData = """
+        {
+            "drink" : "아메리카노",
+            "price" : 2000
+        
+        
+        }
+        """.data(using: .utf8)!
    
     
+    @IBOutlet weak var practiceImage: UIImageView!
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var L2: UILabel!
+    @IBOutlet weak var L1: UILabel!
     @IBOutlet weak var circle1: UIView!
     @IBOutlet weak var ExhibiColor: UIButton!
     @IBOutlet weak var FestiColor: UIButton!
@@ -21,13 +47,49 @@ class ViewController: UIViewController {
     @IBOutlet weak var hashtagCollectionView: UICollectionView!
     private var imageList : [ImageDataModel] = []
     private var hashList : [HashtageDataModel] = []
+    private var posterList : [DataModel] = []
+  
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setImageList(a: "3", b: "3", c: "3", d: "4", e:"5", f:"6",
-                     g:"7", h:"8", I:"9", j:"10")
+
         
+        setImageList(a: "3", b: "3", c: "3", d: "4", e:"5", f:"6",
+                    g:"7", h:"8", I:"9", j:"10")
+//        GetDataService.shared.getDataInfo{ (response) in
+//            switch(response){
+//            case .success(let Results):
+//                
+//                if let results = Results as? [Person] {
+//                    print("123")
+//                    self.L1.text = results[0].posterPath
+//                  
+//                    let url = URL(string: "https://image.tmdb.org/t/p/original\(results[0].posterPath)")
+//                    let data = try? Data(contentsOf: url!)
+//                    self.practiceImage.image = UIImage(data : data!)!
+//                    
+//                    
+////                    self.L2.text = data.username
+//                    
+//                }
+//                
+//            case .requestErr(let message) :
+//                print("requestERR",message)
+//            case .pathErr :
+//                print("pathERR")
+//            case .serverErr :
+//                print("serverERR")
+//            case .networkFail:
+//                print("networkFail")
+//                
+//                
+//            }
+//            
+//            
+//            
+//        }
         
         
         setHashList()
@@ -40,10 +102,37 @@ class ViewController: UIViewController {
 
     }
 
-    
     func setImageList(a: String, b: String, c: String, d: String, e:String, f:String,
                       g:String, h:String, I:String, j:String) {
+//        GetDataService.shared.getDataInfo{ (response) in
+//            switch(response){
+//            case .success(let Results):
+//
+//                if let results = Results as? [Person] {
+//                    print("Tjdrhd")
+//                    self.L1.text = results[0].posterPath
+//                    let url = URL(string: "https://image.tmdb.org/t/p/original\(results[0].posterPath)")
+//                    let data = try? Data(contentsOf: url!)
+//                    self.practiceImage.image = UIImage(data : data!)!
+//
+//
+////                    self.L2.text = data.username
+//
+//                }
+//
+//            case .requestErr(let message) :
+//                print("requestERR",message)
+//            case .pathErr :
+//                print("pathERR")
+//            case .serverErr :
+//                print("serverERR")
+//            case .networkFail:
+//                print("networkFail")
+//            }
+//        }
         imageList.append(contentsOf: [
+            
+            
             ImageDataModel(coverName: a),
             ImageDataModel(coverName: b),
             ImageDataModel(coverName: c),
@@ -128,9 +217,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController : UICollectionViewDataSource {
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == imageCollectionView{ return imageList.count }
-        else {return hashList.count }
+        else {return posterList.count }
     
                 
             
@@ -150,6 +240,8 @@ extension ViewController : UICollectionViewDataSource {
            
                    hashCell.setData(imageName: hashList[indexPath.row].covername,
                                     title: hashList[indexPath.row].title)
+            
+            
            
                    return hashCell
         

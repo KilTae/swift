@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,17 @@
 		238074092793C1BB00975BEF /* ImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238074082793C1BB00975BEF /* ImageDataModel.swift */; };
 		2380740B2793DAD700975BEF /* HashtagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380740A2793DAD700975BEF /* HashtagCollectionViewCell.swift */; };
 		2380740D2793DCAF00975BEF /* HashtagDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380740C2793DCAF00975BEF /* HashtagDataModel.swift */; };
+		23BD3A6427990D0900D0398A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD3A6327990D0900D0398A /* NetworkResult.swift */; };
+		23BD3A66279915EF00D0398A /* SampleNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD3A65279915EF00D0398A /* SampleNetworkViewController.swift */; };
+		23BD3A682799164D00D0398A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD3A672799164D00D0398A /* DataModel.swift */; };
+		23BD3A6A2799185900D0398A /* GetDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD3A692799185900D0398A /* GetDataService.swift */; };
 		23CD8E3B278BFDE200829798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E3A278BFDE200829798 /* AppDelegate.swift */; };
 		23CD8E3D278BFDE200829798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E3C278BFDE200829798 /* SceneDelegate.swift */; };
 		23CD8E3F278BFDE200829798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD8E3E278BFDE200829798 /* ViewController.swift */; };
 		23CD8E42278BFDE200829798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CD8E40278BFDE200829798 /* Main.storyboard */; };
 		23CD8E44278BFDE300829798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CD8E43278BFDE300829798 /* Assets.xcassets */; };
 		23CD8E47278BFDE300829798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CD8E45278BFDE300829798 /* LaunchScreen.storyboard */; };
+		7DA38D789748CEA9C55FD7EE /* Pods_2m4t_home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B7C97D23A18F57F1B7DA1E /* Pods_2m4t_home.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		238074082793C1BB00975BEF /* ImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataModel.swift; sourceTree = "<group>"; };
 		2380740A2793DAD700975BEF /* HashtagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagCollectionViewCell.swift; sourceTree = "<group>"; };
 		2380740C2793DCAF00975BEF /* HashtagDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagDataModel.swift; sourceTree = "<group>"; };
+		23BD3A6327990D0900D0398A /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		23BD3A65279915EF00D0398A /* SampleNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNetworkViewController.swift; sourceTree = "<group>"; };
+		23BD3A672799164D00D0398A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		23BD3A692799185900D0398A /* GetDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDataService.swift; sourceTree = "<group>"; };
 		23CD8E37278BFDE200829798 /* 2m4t_home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2m4t_home.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CD8E3A278BFDE200829798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23CD8E3C278BFDE200829798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +41,9 @@
 		23CD8E43278BFDE300829798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23CD8E46278BFDE300829798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23CD8E48278BFDE300829798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7628B987F0D7C5DAAD1DA94B /* Pods-2m4t_home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2m4t_home.debug.xcconfig"; path = "Target Support Files/Pods-2m4t_home/Pods-2m4t_home.debug.xcconfig"; sourceTree = "<group>"; };
+		90B7C97D23A18F57F1B7DA1E /* Pods_2m4t_home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_2m4t_home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A3B8FC6784FDBD24BBB7A2 /* Pods-2m4t_home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-2m4t_home.release.xcconfig"; path = "Target Support Files/Pods-2m4t_home/Pods-2m4t_home.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA38D789748CEA9C55FD7EE /* Pods_2m4t_home.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00F6CD176B617F108ED8C0BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90B7C97D23A18F57F1B7DA1E /* Pods_2m4t_home.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		23CD8E2E278BFDE200829798 = {
 			isa = PBXGroup;
 			children = (
 				23CD8E39278BFDE200829798 /* 2m4t_home */,
 				23CD8E38278BFDE200829798 /* Products */,
+				2E5F9AA92538805F6535B085 /* Pods */,
+				00F6CD176B617F108ED8C0BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,9 +90,13 @@
 				23CD8E3A278BFDE200829798 /* AppDelegate.swift */,
 				23CD8E3C278BFDE200829798 /* SceneDelegate.swift */,
 				23CD8E3E278BFDE200829798 /* ViewController.swift */,
+				23BD3A6327990D0900D0398A /* NetworkResult.swift */,
 				238074082793C1BB00975BEF /* ImageDataModel.swift */,
+				23BD3A65279915EF00D0398A /* SampleNetworkViewController.swift */,
 				2380740C2793DCAF00975BEF /* HashtagDataModel.swift */,
 				23CD8E40278BFDE200829798 /* Main.storyboard */,
+				23BD3A672799164D00D0398A /* DataModel.swift */,
+				23BD3A692799185900D0398A /* GetDataService.swift */,
 				2380740A2793DAD700975BEF /* HashtagCollectionViewCell.swift */,
 				238074062793C05200975BEF /* ImageCollectionViewCell.swift */,
 				23CD8E43278BFDE300829798 /* Assets.xcassets */,
@@ -79,6 +106,15 @@
 			path = 2m4t_home;
 			sourceTree = "<group>";
 		};
+		2E5F9AA92538805F6535B085 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7628B987F0D7C5DAAD1DA94B /* Pods-2m4t_home.debug.xcconfig */,
+				F6A3B8FC6784FDBD24BBB7A2 /* Pods-2m4t_home.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23CD8E4B278BFDE300829798 /* Build configuration list for PBXNativeTarget "2m4t_home" */;
 			buildPhases = (
+				6E079C011CBFC4608279ABC3 /* [CP] Check Pods Manifest.lock */,
 				23CD8E33278BFDE200829798 /* Sources */,
 				23CD8E34278BFDE200829798 /* Frameworks */,
 				23CD8E35278BFDE200829798 /* Resources */,
+				89BC8E882C4E6AF39195DA94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +182,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E079C011CBFC4608279ABC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-2m4t_home-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89BC8E882C4E6AF39195DA94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-2m4t_home/Pods-2m4t_home-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-2m4t_home/Pods-2m4t_home-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-2m4t_home/Pods-2m4t_home-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23CD8E33278BFDE200829798 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -154,8 +234,12 @@
 				238074092793C1BB00975BEF /* ImageDataModel.swift in Sources */,
 				23CD8E3B278BFDE200829798 /* AppDelegate.swift in Sources */,
 				2380740B2793DAD700975BEF /* HashtagCollectionViewCell.swift in Sources */,
+				23BD3A682799164D00D0398A /* DataModel.swift in Sources */,
 				238074072793C05200975BEF /* ImageCollectionViewCell.swift in Sources */,
 				23CD8E3D278BFDE200829798 /* SceneDelegate.swift in Sources */,
+				23BD3A6427990D0900D0398A /* NetworkResult.swift in Sources */,
+				23BD3A66279915EF00D0398A /* SampleNetworkViewController.swift in Sources */,
+				23BD3A6A2799185900D0398A /* GetDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +383,7 @@
 		};
 		23CD8E4C278BFDE300829798 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7628B987F0D7C5DAAD1DA94B /* Pods-2m4t_home.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +402,7 @@
 		};
 		23CD8E4D278BFDE300829798 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A3B8FC6784FDBD24BBB7A2 /* Pods-2m4t_home.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
