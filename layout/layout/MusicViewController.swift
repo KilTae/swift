@@ -62,12 +62,17 @@ extension MusicViewController : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let musicCell = collectionView.dequeueReusableCell(withReuseIdentifier: MusicCollectionViewCell.identifier, for: indexPath) as? MusicCollectionViewCell else {
-            return UICollectionViewCell()
-        }
+//        guard let musicCell = collectionView.dequeueReusableCell(withReuseIdentifier: MusicCollectionViewCell.identifier, for: indexPath) as? MusicCollectionViewCell else {
+//            return UICollectionViewCell()
+//        }
+//
+//        musicCell.setData(imageName: musicList[indexPath.row].coverName, title: musicList[indexPath.row].musicTitle)
+//        return musicCell
         
-        musicCell.setData(imageName: musicList[indexPath.row].coverName, title: musicList[indexPath.row].musicTitle)
-        return musicCell
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "\(indexPath.row)"
+        return cell
+        
     }
     
     
