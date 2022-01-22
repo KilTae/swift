@@ -56,42 +56,7 @@ class ViewController: UIViewController {
         
 
         
-        setImageList(a: "3", b: "3", c: "3", d: "4", e:"5", f:"6",
-                    g:"7", h:"8", I:"9", j:"10")
-//        GetDataService.shared.getDataInfo{ (response) in
-//            switch(response){
-//            case .success(let Results):
-//                
-//                if let results = Results as? [Person] {
-//                    print("123")
-//                    self.L1.text = results[0].posterPath
-//                  
-//                    let url = URL(string: "https://image.tmdb.org/t/p/original\(results[0].posterPath)")
-//                    let data = try? Data(contentsOf: url!)
-//                    self.practiceImage.image = UIImage(data : data!)!
-//                    
-//                    
-////                    self.L2.text = data.username
-//                    
-//                }
-//                
-//            case .requestErr(let message) :
-//                print("requestERR",message)
-//            case .pathErr :
-//                print("pathERR")
-//            case .serverErr :
-//                print("serverERR")
-//            case .networkFail:
-//                print("networkFail")
-//                
-//                
-//            }
-//            
-//            
-//            
-//        }
-        
-        
+        apiLoad(a: ExhibiColor)
         setHashList()
         imageCollectionView.delegate = self
         imageCollectionView.dataSource = self
@@ -101,49 +66,69 @@ class ViewController: UIViewController {
         userImg.layer.cornerRadius = 3
 
     }
+    
+    func apiLoad(a: UIButton){
+        GetDataService.shared.getDataInfo{ [self] (response) in
+            switch(response){
+            case .success(let Results):
+                
+                if let results = Results as? [Person] {
+                
+                    if a == ExhibiColor {
+                    for i in 0 ... 9 {
+                        setImageList(a: results[i].posterPath)
+                        
+                    }
+                    }
+                    if a == FestiColor {
+                    for i in 10 ... 19 {
+                        setImageList(a: results[i].posterPath)
+                        
+                    }
+                    }
+                    
+                    if a == MuseumColor {
+                    for i in 6 ... 15 {
+                        setImageList(a: results[i].posterPath)
+                        
+                    }
+                    }
+                    
+                    
+                   
+                    
+                    
+                    DispatchQueue.main.async {
+                        self.imageCollectionView.reloadData()
+                    }
+                        
+                }
+                
+            case .requestErr(let message) :
+                print("requestERR",message)
+            case .pathErr :
+                print("pathERR")
+            case .serverErr :
+                print("serverERR")
+            case .networkFail:
+                print("networkFail")
+                
+                
+            }
+            
+            
+            
+        }
+        
+        
+    }
+    
 
-    func setImageList(a: String, b: String, c: String, d: String, e:String, f:String,
-                      g:String, h:String, I:String, j:String) {
-//        GetDataService.shared.getDataInfo{ (response) in
-//            switch(response){
-//            case .success(let Results):
-//
-//                if let results = Results as? [Person] {
-//                    print("Tjdrhd")
-//                    self.L1.text = results[0].posterPath
-//                    let url = URL(string: "https://image.tmdb.org/t/p/original\(results[0].posterPath)")
-//                    let data = try? Data(contentsOf: url!)
-//                    self.practiceImage.image = UIImage(data : data!)!
-//
-//
-////                    self.L2.text = data.username
-//
-//                }
-//
-//            case .requestErr(let message) :
-//                print("requestERR",message)
-//            case .pathErr :
-//                print("pathERR")
-//            case .serverErr :
-//                print("serverERR")
-//            case .networkFail:
-//                print("networkFail")
-//            }
-//        }
+    func setImageList(a: String) {
+
         imageList.append(contentsOf: [
             
-            
-            ImageDataModel(coverName: a),
-            ImageDataModel(coverName: b),
-            ImageDataModel(coverName: c),
-            ImageDataModel(coverName: d),
-            ImageDataModel(coverName: e),
-            ImageDataModel(coverName: f),
-            ImageDataModel(coverName: g),
-            ImageDataModel(coverName: h),
-            ImageDataModel(coverName: I),
-            ImageDataModel(coverName: j),
-
+            ImageDataModel(coverName: a)
         
         ])
         
@@ -173,8 +158,10 @@ class ViewController: UIViewController {
    
     @IBAction func Exhibition(_ sender: Any) {
         imageList.removeAll()
-        setImageList(a: "1", b: "1", c: "1", d: "1", e:"1", f:"1",
-                          g:"1", h:"1", I:"1", j:"1")
+
+        apiLoad(a: ExhibiColor)
+
+        
         circle1.frame.origin.x = 66
         ExhibiColor.isHighlighted = false
         FestiColor.isHighlighted = true
@@ -188,8 +175,7 @@ class ViewController: UIViewController {
     
     @IBAction func Festival(_ sender: Any) {
         imageList.removeAll()
-        setImageList(a: "6", b: "6", c: "6", d: "6", e:"6", f:"6",
-                          g:"6", h:"6", I:"6", j:"6")
+        apiLoad(a: FestiColor)
         circle1.frame.origin.x = 138
         ExhibiColor.isHighlighted = true
         FestiColor.isHighlighted = false
@@ -203,8 +189,7 @@ class ViewController: UIViewController {
     
     @IBAction func Museum(_ sender: Any) {
         imageList.removeAll()
-       setImageList(a: "3", b: "3", c: "3", d: "3", e:"3", f:"3",
-                          g:"3", h:"3", I:"3", j:"3")
+        apiLoad(a: MuseumColor)
         circle1.frame.origin.x = 213
         ExhibiColor.isHighlighted = true
         FestiColor.isHighlighted = true
@@ -231,7 +216,7 @@ extension ViewController : UICollectionViewDataSource {
         guard let imageCell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCollectionViewCell.identifier, for: indexPath) as? ImageCollectionViewCell else {return ImageCollectionViewCell() }
        
         imageCell.setData(imageName: imageList[indexPath.row].coverName)
-    
+            
         return imageCell
         }
         
