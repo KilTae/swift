@@ -121,6 +121,10 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LP5-Cl-edc">
                                 <rect key="frame" x="20" y="637" width="394" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Nz5-nb-0h1"/>
+                                    <constraint firstAttribute="width" constant="394" id="dbw-gx-pl7"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C6S-nl-lOi">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -200,7 +204,6 @@
                             <constraint firstItem="Njv-LV-jv0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="92" id="fgU-Dn-lPd"/>
                             <constraint firstItem="Njv-LV-jv0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="fgc-Sn-6q6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LP5-Cl-edc" secondAttribute="trailing" id="gfK-h2-xXZ"/>
-                            <constraint firstItem="VyX-1l-NUE" firstAttribute="top" secondItem="lJt-t8-bbv" secondAttribute="bottom" constant="326" id="jFe-nd-g81"/>
                             <constraint firstItem="9U7-S9-A93" firstAttribute="leading" secondItem="IWH-Lt-jwq" secondAttribute="trailing" constant="23" id="qTw-cN-BZf"/>
                             <constraint firstItem="x36-mE-TpF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vuo-ki-yyu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zoY-lS-l5H" secondAttribute="trailing" constant="21" id="wCl-AJ-Jga"/>
